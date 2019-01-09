@@ -12,9 +12,11 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "dependencies": {
+    "bluebird": "^3.5.3",
     "gatsby": "^2.0.76",
     "gatsby-source-filesystem": "^2.0.13",
     "gatsby-transformer-remark": "^2.2.0",
+    "lodash": "^4.17.11",
     "react": "^16.5.1",
     "react-dom": "^16.5.1"
   },

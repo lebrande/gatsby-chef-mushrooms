@@ -7,8 +7,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'mushrooms',
-        path: `${__dirname}/src/mushrooms`,
+        name: 'products',
+        path: `${__dirname}/src/products`,
       },
     },
     {
