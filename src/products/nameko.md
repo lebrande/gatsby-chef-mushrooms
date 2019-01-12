@@ -1,7 +1,7 @@
 ---
 title: Nameko
 path: "/nameko/"
-metaTitle: "Nameko - Dobre Grzybki"
+metaTitle: "Nameko - Chef Mushrooms"
 metaDescription: ""
 image: "nameko.jpg"
 ---

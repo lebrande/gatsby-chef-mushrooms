@@ -1,0 +1,24 @@
+.product-item {
+  position: relative;
+  padding: 2em 0;
+
+  &__wrapper {
+    @include container();
+    display: flex;
+    flex-direction: row;
+  }
+
+    &__img-link {
+      flex: 3;
+      @include clear-link();
+    }
+
+      &__img {
+        height: 200px;
+        width: auto;
+      }
+
+    &__content {
+      flex: 7;
+    }
+}
