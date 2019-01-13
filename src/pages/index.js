@@ -30,34 +30,24 @@ const Layout = ({
       edges: imageEdges,
     },
   }
-}) => {
-  const products = postEdges.map(
-    (e) => e.node,
-  );
-
-  const images = imageEdges.map(
-    (e) => e.node,
-  );
-
-  return (
-    <div>
-      <Banner
-        logoImageSharp={logoImageSharp}
-        heroImageSharp={heroImageSharp}
+}) => (
+  <div>
+    <Banner
+      logoImageSharp={logoImageSharp}
+      heroImageSharp={heroImageSharp}
+    />
+    <div id="main">
+      <Tiles tiles={homePageBoxes} />
+      <Content />
+      <Products
+        products={postEdges}
+        images={imageEdges}
       />
-      <div id="main">
-        <Tiles tiles={homePageBoxes} />
-        <Content />
-        <Products
-          products={products}
-          images={images}
-        />
-        <Contact />
-        <Footer />
-      </div>
+      <Contact />
+      <Footer />
     </div>
-  );
-};
+  </div>
+);
 
 export default Layout;
 
@@ -83,8 +73,6 @@ export const query = graphql`
           name
           relativePath
           childImageSharp {
-            # Specify the image processing specifications right in the query.
-            # Makes it trivial to update as your page's design changes.
             fixed(width: 300, height: 300) {
               ...GatsbyImageSharpFixed
             }

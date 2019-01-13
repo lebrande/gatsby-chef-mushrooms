@@ -1,4 +1,8 @@
 .content {
+  &__inner {
+    @include inner();
+  }
+  
   &__text {
     max-width: 600px;
   }

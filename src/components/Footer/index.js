@@ -1,8 +1,8 @@
 import React from 'react';
 
 const Footer = () => (
-  <footer id="footer">
-    <div className="inner">
+  <footer className="footer">
+    <div className="footer__inner">
       <ul className="icons">
         <li>
           <a

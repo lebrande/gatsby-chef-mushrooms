@@ -1,12 +1,13 @@
 import React from 'react';
+import Header from '../Header';
 
 const Contact = () => (
-  <section id="contact">
+  <section className="contact">
     <div className="inner">
       <section>
-        <header className="major">
+        <Header>
           <h2>Kontakt</h2>
-        </header>
+        </Header>
         <p>
           Le Brande Jakub Pusiak
           <br />
@@ -15,7 +16,7 @@ const Contact = () => (
       </section>
       <section className="split">
         <section>
-          <div className="contact-method">
+          <div className="contact__method">
             <span className="icon alt fa-envelope" />
             <h3>
               <a href="mailto:jakub@lebrande.pl">jakub@lebrande.pl</a>
@@ -23,7 +24,7 @@ const Contact = () => (
           </div>
         </section>
         <section>
-          <div className="contact-method">
+          <div className="contact__method">
             <span className="icon alt fa-phone" />
             <h3>+48 731 044 940</h3>
           </div>

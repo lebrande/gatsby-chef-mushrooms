@@ -1,15 +1,16 @@
 import React from 'react';
 import Stars from '../Stars';
+import Header from '../Header';
 
 const Tile = ({ title, features, content }) => (
   <article
     key={title}
     style={{ backgroundImage: '' }}
   >
-    <header className="major">
+    <Header>
       <h3>{features && features.includes('stars') ? <Stars /> : title}</h3>
       <p>{content}</p>
-    </header>
+    </Header>
   </article>
 );
 

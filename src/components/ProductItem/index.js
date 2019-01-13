@@ -8,13 +8,12 @@ const ProductItem = ({
   image,
 }) => (
   <section className="product-item">
-    {console.log({ image })}
     <div className="product-item__wrapper">
       <Link 
         to="/"
         className="product-item__img-link"
       >
-        {!!image ? <Img fixed={image.childImageSharp.fixed} /> : 'hello'}
+        {!!image ? <Img fixed={image.node.childImageSharp.fixed} /> : 'hello'}
       </Link>
       <div className="product-item__content">
         <header className="product-header">

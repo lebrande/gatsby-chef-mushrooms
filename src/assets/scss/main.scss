@@ -28,16 +28,14 @@
 ));
 
 @mixin inner {
-	> .inner {
-		@include padding(4em, 0);
-		margin: 0 auto;
-		max-width: _size(inner);
-		width: calc(100% - 6em);
+	@include padding(4em, 0);
+	margin: 0 auto;
+	max-width: _size(inner);
+	width: calc(100% - 6em);
 
-		@include breakpoint(small) {
-			@include padding(3em, 0);
-			width: calc(100% - 3em);
-		}
+	@include breakpoint(small) {
+		@include padding(3em, 0);
+		width: calc(100% - 3em);
 	}
 }
 
@@ -48,25 +46,20 @@
 
 // Component.
 
-@import 'components/section';
 @import 'components/icon';
 @import 'components/list';
 @import 'components/button';
-@import 'components/tiles';
-@import 'components/contact-method';
-
-// Layout.
-
-@import 'layout/header';
-@import 'layout/main';
-@import 'layout/contact';
-@import 'layout/footer';
-@import 'layout/wrapper';
-@import 'layout/menu';
 
 // Custom
 
+@import '../../components/Banner/banner';
+@import '../../components/Contact/contact';
+@import '../../components/Content/content';
+@import '../../components/Footer/footer';
+@import '../../components/Header/header';
+@import '../../components/Main/main';
 @import '../../components/ProductItem/product-item';
 @import '../../components/Products/products';
-@import '../../components/Content/content';
-@import '../../components/Banner/banner';
+@import '../../components/Tiles/tiles';
+
+
