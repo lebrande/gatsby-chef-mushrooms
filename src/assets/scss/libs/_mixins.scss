@@ -35,11 +35,11 @@
 
 	$x: 0.1em;
 
-	@if unit(_size(element-margin)) == 'rem' {
+	@if unit($size-element-margin) == 'rem' {
 		$x: 0.1rem;
 	}
 
-	padding: ($tb + nth($pad,1)) ($lr + nth($pad,2)) max($x, $tb - _size(element-margin) + nth($pad,3)) ($lr + nth($pad,4)) #{$important};
+	padding: ($tb + nth($pad,1)) ($lr + nth($pad,2)) max($x, $tb - $size-element-margin + nth($pad,3)) ($lr + nth($pad,4)) #{$important};
 
 }
 
@@ -412,10 +412,10 @@
 	> * {
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'row');
-		background-color: desaturate(lighten(_palette(bg-alt), 2), 1);
+		background-color: desaturate(lighten($color-bg-alt, 2), 1);
 
 		&:nth-child(2n) {
-			background-color: desaturate(lighten(_palette(bg-alt), 4), 2);
+			background-color: desaturate(lighten($color-bg-alt, 4), 2);
 		}
 	}
 }

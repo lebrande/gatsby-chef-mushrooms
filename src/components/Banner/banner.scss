@@ -9,7 +9,7 @@
   padding: 4em 0 6em;
 
   &:after {
-    background-color: _palette(bg);
+    background-color: $color-bg;
     content: '';
     display: block;
     height: 100%;

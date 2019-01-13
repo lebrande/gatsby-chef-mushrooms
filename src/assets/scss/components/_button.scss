@@ -5,21 +5,21 @@ button,
 .button {
 	@include vendor('appearance', 'none');
 	@include vendor('transition', (
-		'background-color #{_duration(transition)} ease-in-out',
-		'box-shadow #{_duration(transition)} ease-in-out',
-		'color #{_duration(transition)} ease-in-out'
+		'background-color #{$duration-transition} ease-in-out',
+		'box-shadow #{$duration-transition} ease-in-out',
+		'color #{$duration-transition} ease-in-out'
 	));
 	background-color: transparent;
 	border: 0;
 	border-radius: 0;
-	box-shadow: inset 0 0 0 2px _palette(fg-bold);
-	color: _palette(fg-bold);
+	box-shadow: inset 0 0 0 2px $color-fg-bold;
+	color: $color-fg-bold;
 	cursor: pointer;
 	display: inline-block;
 	font-size: 0.8em;
-	font-weight: _font(weight-bold);
+	font-weight: $font-weight-bold;
 	height: 3.5em;
-	letter-spacing: _font(letter-spacing-alt);
+	letter-spacing: $font-letter-spacing-alt;
 	line-height: 3.5em;
 	padding: 0 1.75em;
 	text-align: center;
@@ -28,14 +28,14 @@ button,
 	white-space: nowrap;
 
 	&:hover, &:active {
-		box-shadow: inset 0 0 0 2px _palette(highlight);
-		color: _palette(highlight);
+		box-shadow: inset 0 0 0 2px $color-highlight;
+		color: $color-highlight;
 	}
 
 	&:active {
-		background-color: transparentize(_palette(highlight), 0.9);
-		box-shadow: inset 0 0 0 2px desaturate(darken(_palette(highlight), 15), 5);
-		color: desaturate(darken(_palette(highlight), 15), 5);
+		background-color: transparentize($color-highlight, 0.9);
+		box-shadow: inset 0 0 0 2px desaturate(darken($color-highlight, 15), 5);
+		color: desaturate(darken($color-highlight, 15), 5);
 	}
 
 	&.icon {
@@ -46,7 +46,7 @@ button,
 
 	&.fit {
 		display: block;
-		margin: 0 0 (_size(element-margin) * 0.5) 0;
+		margin: 0 0 ($size-element-margin * 0.5) 0;
 		width: 100%;
 	}
 
@@ -65,7 +65,7 @@ button,
 		position: relative;
 
 		&:before, &:after {
-			@include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
+			@include vendor('transition', 'opacity #{$duration-transition} ease-in-out');
 			background-position: center right;
 			background-repeat: no-repeat;
 			background-size: 36px 24px;
@@ -80,11 +80,11 @@ button,
 		}
 
 		&:before {
-			background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: #{_palette(fg-bold)}; stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>');
+			background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: #{$color-fg-bold}; stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>');
 		}
 
 		&:after {
-			background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: #{_palette(highlight)}; stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>');
+			background-image: svg-url('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36px" height="24px" viewBox="0 0 36 24" zoomAndPan="disable"><style>line { stroke: #{$color-highlight}; stroke-width: 2px; }</style><line x1="0" y1="12" x2="34" y2="12" /><line x1="25" y1="4" x2="34" y2="12.5" /><line x1="25" y1="20" x2="34" y2="11.5" /></svg>');
 			opacity: 0;
 			z-index: 1;
 		}
@@ -101,17 +101,17 @@ button,
 	}
 
 	&.special {
-		background-color: _palette(fg-bold);
+		background-color: $color-fg-bold;
 		box-shadow: none;
-		color: _palette(bg);
+		color: $color-bg;
 
 		&:hover, &:active {
-			background-color: _palette(highlight);
-			color: _palette(bg) !important;
+			background-color: $color-highlight;
+			color: $color-bg !important;
 		}
 
 		&:active {
-			background-color: desaturate(darken(_palette(highlight), 15), 5);
+			background-color: desaturate(darken($color-highlight, 15), 5);
 		}
 	}
 
