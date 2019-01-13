@@ -20,7 +20,7 @@
 
 	.inner {
 		@include inner();
-		@include vendor('display', 'flex');
+		display: flex;
 		padding: 0 !important;
 
 		> :nth-child(2n - 1) {

@@ -135,10 +135,9 @@ ul {
 			vertical-align: middle;
 
 			> .page {
-				@include vendor('transition', (
-					'background-color #{$duration-transition} ease-in-out',
-					'color #{$duration-transition} ease-in-out'
-				));
+				transition:
+					background-color $duration-transition ease-in-out,
+					color $duration-transition ease-in-out;
 				border-bottom: 0;
 				display: inline-block;
 				font-size: 0.8em;
