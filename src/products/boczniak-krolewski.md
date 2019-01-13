@@ -3,7 +3,7 @@ title: Boczniak królewski
 path: "/boczniak-krolewski/"
 metaTitle: "Boczniak królewski - Świeże grzyby eryngii - Zamów"
 metaDescription: "Potrzebujesz boczniaka królewskiego? Świeże boczniaki eryngii możesz zamówić online lub napisać do naszego konsultanta na Mesengerze lub przez email."
-image: "boczniak-krolewski.jpg"
+image: "products/boczniak-krolewski.jpg"
 ---
 
 Boczniak mikołajkowy

@@ -3,7 +3,7 @@ title: Enoki
 path: "/enoki/"
 metaTitle: "Enoki grzyby egzotyczne i orientalne | Chef Mushrooms"
 metaDescription: "Szukasz składników do Twoich potraw? Gotujesz po japońsku? Wzbogać smak i charakter swoich potraw o niezwykłe grzyby enoki. Zamów na stronie lub Facebooku."
-image: "enoki.jpg"
+image: "products/enoki.jpg"
 ---
 
 Flammulina velutipes

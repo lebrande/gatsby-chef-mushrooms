@@ -3,7 +3,7 @@ title: Pioppino
 path: "/pioppino/"
 metaTitle: "Pioppino grzyby idealne do kuchni włoskiej | Zamów"
 metaDescription: "Szukasz inspiracji dla Twoich potraw? Lubisz kuchnię włoską, rissotto i dania z past? Poznaj wspaniały smak grzybów pioppino. Zamów na naszej stronie."
-image: "pioppino.jpg"
+image: "products/pioppino.jpg"
 ---
 
 Polówka wiązkowa

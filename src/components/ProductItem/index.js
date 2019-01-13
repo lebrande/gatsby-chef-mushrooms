@@ -1,17 +1,20 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
+import Img from 'gatsby-image';
 
 const ProductItem = ({
   children,
   title,
+  image,
 }) => (
   <section className="product-item">
+    {console.log({ image })}
     <div className="product-item__wrapper">
       <Link 
         to="/"
         className="product-item__img-link"
       >
-        {title}
+        {!!image ? <Img fixed={image.childImageSharp.fixed} /> : 'hello'}
       </Link>
       <div className="product-item__content">
         <header className="product-header">

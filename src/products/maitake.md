@@ -3,7 +3,7 @@ title: Maitake
 path: "/maitake/"
 metaTitle: "Maitake - Chef Mushrooms"
 metaDescription: ""
-image: "maitake.jpg"
+image: "products/maitake.jpg"
 ---
 
 ## Maitake

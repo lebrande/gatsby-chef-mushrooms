@@ -3,7 +3,7 @@ title: Shiitake
 path: "/shiitake/"
 metaTitle: "Shiitake - Świeże grzyby orientalne - Zamów | Chef Mushrooms"
 metaDescription: "Zamów świeże grzyby shiitake. Wejdź na stronę sklepu, zamów i zapłać online. Zobacz także więcej ciekawych grzybów kuchni orientalnej."
-image: "shiitake.jpg"
+image: "products/shiitake.jpg"
 ---
 
 Twardnik japoński, twardziak jadalny

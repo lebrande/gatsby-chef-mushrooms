@@ -1,88 +1,57 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
-import Img from 'gatsby-image';
-
-import Header from '../components/Header';
+import { graphql } from 'gatsby';
 
 import Banner from '../components/Banner';
 import Contact from '../components/Contact';
 import Products from '../components/Products';
 import Content from '../components/Content';
 import Footer from '../components/Footer';
-
-import Stars from '../components/Stars';
+import Tiles from '../components/Tiles';
 
 import '../assets/scss/main.scss';
-
-const Article = ({ title, features, content, index }) => (
-  <article
-    key={title}
-    style={{ backgroundImage: '' }}
-  >
-    <header className="major">
-      <h3>{features && features.includes('stars') ? <Stars /> : title}</h3>
-      <p>{content}</p>
-    </header>
-  </article>
-);
 
 const Layout = ({ 
   data: { 
     site: { 
       siteMetadata: {
-        title,
-        description,
         homePageBoxes,
       },
     },
     allMarkdownRemark: {
-      edges,
+      edges: postEdges,
     },
-    file: {
-      childImageSharp: {
-        fixed,
-      },
+    logo: {
+      childImageSharp: logoImageSharp,
+    },
+    heroImage: {
+      childImageSharp: heroImageSharp,
+    },
+    allFile: {
+      edges: imageEdges,
     },
   }
 }) => {
-  const products = edges.map(
+  const products = postEdges.map(
+    (e) => e.node,
+  );
+
+  const images = imageEdges.map(
     (e) => e.node,
   );
 
   return (
     <div>
-      <Header
-        title={title}
-        description={description}
+      <Banner
+        logoImageSharp={logoImageSharp}
+        heroImageSharp={heroImageSharp}
       />
-      <ul>
-        {edges.map(({ 
-          node: {
-            frontmatter: {
-              title,
-              path,
-            },
-          },
-        }) => (
-          <div key={path}>
-            <h3>{title}</h3>
-            <Link to={path}>read more</Link>
-          </div>
-        ))}
-      </ul>
-      <Banner title={title} subtitle={description} />
-
       <div id="main">
-        <Img fixed={fixed} />
-        <section id="one" className="tiles">
-          {homePageBoxes.map((props, index) => <Article
-            {...props}
-            key={index}
-            index={index}
-          />)}
-        </section>
+        <Tiles tiles={homePageBoxes} />
         <Content />
-        <Products products={products} />
+        <Products
+          products={products}
+          images={images}
+        />
         <Contact />
         <Footer />
       </div>
@@ -94,15 +63,35 @@ export default Layout;
 
 export const query = graphql`
   query HomePageQuery {
-    file(relativePath: { eq: "wroclawski-bazar-smakoszy.jpg" }) {
-      name
+    logo: file(relativePath: { eq: "logo/premium-mushrooms-opacity.png" }) {
       childImageSharp {
-        # Specify the image processing specifications right in the query.
-        # Makes it trivial to update as your page's design changes.
-        fixed(width: 300, height: 300) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 540) {
+          ...GatsbyImageSharpFluid
         }
       }
+    }
+    heroImage: file(relativePath: { eq: "hero/banner-hero.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    allFile(filter: { relativePath: { regex: "/jpg$/" } }) {
+      edges {
+        node {
+          name
+          relativePath
+          childImageSharp {
+            # Specify the image processing specifications right in the query.
+            # Makes it trivial to update as your page's design changes.
+            fixed(width: 300, height: 300) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
+      }
+      totalCount
     }
     site {
       siteMetadata {
@@ -126,6 +115,7 @@ export const query = graphql`
           frontmatter {
             title
             path
+            image
           }
         }
       }

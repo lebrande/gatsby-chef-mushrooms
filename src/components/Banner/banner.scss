@@ -1,0 +1,51 @@
+.banner {
+  @include background-image();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 32em;
+  position: relative;
+  padding: 4em 0 6em;
+
+  &:after {
+    background-color: _palette(bg);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: opacity 2.5s ease;
+    transition-delay: 0.6s;
+    pointer-events: none;
+  }
+
+  .body.is-loading & {
+    &:after {
+      opacity: 1.0;
+    }
+  }
+
+  @include breakpoint(small) {
+    height: auto;
+    max-height: none;
+    min-height: 0;
+  }
+
+  &__logo {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    max-width: 540px;
+    margin-bottom: 3em;
+  }
+
+  &__cta {
+    position: relative;
+    z-index: 2;
+  }
+}

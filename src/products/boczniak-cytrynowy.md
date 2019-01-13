@@ -3,7 +3,7 @@ title: Boczniak Cytrynowy
 path: "/boczniak-cytrynowy/"
 metaTitle: "Boczniak cytrynowy - Świeże grzyby uprawiane w Polsce - Zamów"
 metaDescription: "Bardzo delikatne i smaczne boczniaki cytrynowe. Kolorowe i bardzo proste w przyrządzeniu grzyby. Wejdź na stronę i zamów."
-image: "boczniak-cytrynowy.jpg"
+image: "products/boczniak-cytrynowy.jpg"
 ---
 
 Golden oyster mushrooms

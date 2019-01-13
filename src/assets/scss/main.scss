@@ -5,6 +5,8 @@
 @import '../css/font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
 
+@import 'mixins/background-image';
+
 /*
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
@@ -56,7 +58,6 @@
 // Layout.
 
 @import 'layout/header';
-@import 'layout/banner';
 @import 'layout/main';
 @import 'layout/contact';
 @import 'layout/footer';
@@ -68,3 +69,4 @@
 @import '../../components/ProductItem/product-item';
 @import '../../components/Products/products';
 @import '../../components/Content/content';
+@import '../../components/Banner/banner';

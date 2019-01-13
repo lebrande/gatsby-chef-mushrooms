@@ -3,7 +3,7 @@ title: Shimeji
 path: "/shimeji/"
 metaTitle: "Shimeji - Grzyby orientalne - Zamów | Chef Mushrooms"
 metaDescription: "Szukasz składników do potraw orientalnych? Zobacz ofertę i zamów."
-image: "shimeji.jpg"
+image: "products/shimeji.jpg"
 ---
 
 Hypsizygus tessellatus

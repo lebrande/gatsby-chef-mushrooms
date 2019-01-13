@@ -3,7 +3,7 @@ title: Boczniak Rózowy
 path: "/boczniak-rozowy/"
 metaTitle: "Boczniak różowy - Świeże grzyby egzotyczne - Zamów online"
 metaDescription: "Dowiedz się więcej o dostawie. Zapoznaj się się z ofertą Chef Mushrooms i zamów boczniaka różowego."
-image: "boczniak-rozowy.jpg"
+image: "products/boczniak-rozowy.jpg"
 ---
 
 Flamingo oyster mushroom
