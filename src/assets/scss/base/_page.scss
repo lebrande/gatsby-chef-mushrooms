@@ -8,8 +8,12 @@ body {
 	-ms-overflow-style: scrollbar;
 }
 
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
 // Ensures page width is always >=320px.
-@include breakpoint(xsmall) {
+@include breakpoint($breakpoint-xsmall) {
 	html, body {
 		min-width: 320px;
 	}

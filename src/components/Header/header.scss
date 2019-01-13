@@ -41,7 +41,7 @@
     }
   }
 
-	@include breakpoint(small) {
+	@include breakpoint($breakpoint-small) {
 		&.major {
 			> p {
 				br {

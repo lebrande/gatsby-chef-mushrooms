@@ -4,7 +4,7 @@
 	max-width: $size-inner;
 	width: calc(100% - 6em);
 
-	@include breakpoint(small) {
+	@include breakpoint($breakpoint-small) {
 		@include padding(3em, 0);
 		width: calc(100% - 3em);
 	}

@@ -30,7 +30,7 @@
     }
   }
 
-  @include breakpoint(small) {
+  @include breakpoint($breakpoint-small) {
     height: auto;
     max-height: none;
     min-height: 0;
@@ -47,5 +47,9 @@
   &__cta {
     position: relative;
     z-index: 2;
+  }
+
+  &__button {
+    @include button();
   }
 }

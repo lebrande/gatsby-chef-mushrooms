@@ -46,7 +46,7 @@ ul {
 			}
 		}
 
-		@include breakpoint(small) {
+		@include breakpoint($breakpoint-small) {
 			li {
 				padding: 0 0.75em 0 0;
 			}
@@ -173,7 +173,7 @@ ul {
 			}
 		}
 
-		@include breakpoint(xsmall) {
+		@include breakpoint($breakpoint-xsmall) {
 			li {
 				&:nth-child(n+2):nth-last-child(n+2) {
 					display: none;

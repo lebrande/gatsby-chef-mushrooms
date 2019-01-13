@@ -24,7 +24,7 @@
     }
   }
 
-  @include breakpoint(xsmall) {
+  @include breakpoint($breakpoint-xsmall) {
     .copyright {
       li {
         display: block;

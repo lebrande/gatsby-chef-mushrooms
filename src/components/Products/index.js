@@ -26,12 +26,12 @@ const Products = ({ products, images }) => (
       >
         <ul className="actions">
           <li>
-            <Link to={path} className="button">
+            <Link to={path} className="products__button">
               Czytaj więcej
             </Link>
           </li>
           <li>
-            <button className="button">
+            <button className="products__button">
               zapytaj o ofertę
             </button>
           </li>

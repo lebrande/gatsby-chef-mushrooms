@@ -1,3 +1,7 @@
 .products {
   @include spotlights();
+
+  &__button {
+    @include button();
+  }
 }

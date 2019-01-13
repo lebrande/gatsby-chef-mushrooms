@@ -17,7 +17,7 @@ const Banner = ({
       />
     </div>
     <div className="banner__cta">
-      <a href="#products" className="button next scrolly">
+      <a href="#products" className="banner__button next scrolly">
         Zobacz produkty
       </a>
     </div>

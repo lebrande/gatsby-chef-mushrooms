@@ -1,0 +1,7 @@
+@mixin breakpoint($breakpoint) {
+	$query: 'screen and #{$breakpoint}';
+
+	@media #{$query} {
+		@content;
+	}
+}

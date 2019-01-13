@@ -1,9 +1,16 @@
-@import 'libs/vars';
-@import 'libs/skel';
+@import 'vars/breakpoints';
+@import 'vars/colors';
+@import 'vars/durations';
+@import 'vars/font';
+@import 'vars/sizes';
+
 @import '../css/font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
 
+@import 'functions/str-replace';
+
 @import 'mixins/background-image';
+@import 'mixins/breakpoint';
 @import 'mixins/clear-link';
 @import 'mixins/container';
 @import 'mixins/icon';
@@ -11,41 +18,13 @@
 @import 'mixins/padding';
 @import 'mixins/spotlights';
 @import 'mixins/svg-url';
+@import 'mixins/button';
 
-/*
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-@include skel-breakpoints((
-	xlarge: '(max-width: 1680px)',
-	large: '(max-width: 1280px)',
-	medium: '(max-width: 980px)',
-	small: '(max-width: 736px)',
-	xsmall: '(max-width: 480px)',
-	xxsmall: '(max-width: 360px)'
-));
-
-@include skel-layout((
-	reset: 'full',
-	boxModel: 'border',
-));
-
-
-
-// Base.
-
+@import 'base/reset';
 @import 'base/page';
 @import 'base/typography';
-
-// Component.
-
-@import 'components/icon';
-@import 'components/list';
-@import 'components/button';
-
-// Custom
+@import 'base/icon';
+@import 'base/list';
 
 @import '../../components/Banner/banner';
 @import '../../components/Contact/contact';
@@ -56,5 +35,3 @@
 @import '../../components/ProductItem/product-item';
 @import '../../components/Products/products';
 @import '../../components/Tiles/tiles';
-
-
