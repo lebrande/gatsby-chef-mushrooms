@@ -29,6 +29,9 @@ const Layout = ({
     allFile: {
       edges: imageEdges,
     },
+    boxImages: {
+      edges: boxImageEdges,
+    }, 
   }
 }) => (
   <div>
@@ -37,7 +40,10 @@ const Layout = ({
       heroImageSharp={heroImageSharp}
     />
     <div id="main">
-      <Tiles tiles={homePageBoxes} />
+      <Tiles
+        tiles={homePageBoxes}
+        images={boxImageEdges}
+      />
       <Content />
       <Products
         products={postEdges}
@@ -67,6 +73,20 @@ export const query = graphql`
         }
       }
     }
+    boxImages: allFile(filter: { relativePath: { regex: "/jpg$/" } }) {
+      edges {
+        node {
+          name
+          relativePath
+          childImageSharp {
+            fluid(maxWidth: 400) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+      totalCount
+    }
     allFile(filter: { relativePath: { regex: "/jpg$/" } }) {
       edges {
         node {
@@ -90,6 +110,7 @@ export const query = graphql`
           content
           link
           features
+          image
         }
         homeTextBlock {
           title

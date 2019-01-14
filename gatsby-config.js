@@ -11,29 +11,35 @@ module.exports = {
         title: 'Ocena na Facebooku',
         content: 'Ocena na Facebooku',
         features: ['stars'],
+        image: 'other/boczniaki-danie.jpg',
       },
       {
         title: '2297 Obserwujących na Instagramie',
         content: 'Wzbudamy ciekawość',
-      },
+        image: 'other/risotto-z-boczniakami-krolewskimi.jpg',
+      },  
       {
         title: 'Lokalny producent',
         content: 'Najlepsze produkty na wyciągnięcie ręki.',
+        image: 'other/oferta-dla-gastronomii.jpg',
       },
       {
         title: 'Licencjonowany grzyboznawca',
         content: 'Jesteśmy profesjonalistami',
+        image: 'other/boczniak-cytrynowy-swiezy.jpg',
       },
       {
         title: '12 Gatunków grzybów uprawnych',
         content: 'Dostępne przez cały rok',
         link: 'products',
+        image: 'other/gatunki-grzybow-uprawnych.jpg',
       },
       {
         title: 'Współpracujemy z restauracjami',
         content: 'Zobacz naszą ofertę dla gastronomii',
         link: 'products',
-      }
+        image: 'other/ramen-z-grzybami.jpg',
+      },
     ],
   },
   plugins: [  
