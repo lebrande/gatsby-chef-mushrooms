@@ -1,6 +1,8 @@
 import React from 'react';
 import Img from 'gatsby-image';
 
+import { scrollTo } from '../../lib/scrollTo';
+
 const Banner = ({
   logoImageSharp,
   heroImageSharp,
@@ -17,9 +19,14 @@ const Banner = ({
       />
     </div>
     <div className="banner__cta">
-      <a href="#products" className="banner__button next scrolly">
+      <button
+        className="banner__button next"
+        onClick={() => {
+          scrollTo('#content');
+        }}
+      >
         Zobacz produkty
-      </a>
+      </button>
     </div>
   </div>
 );

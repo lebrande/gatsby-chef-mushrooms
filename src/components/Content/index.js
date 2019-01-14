@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../Header';
 
 const Content = () => (
-  <section className="content">
+  <section id="content" className="content">
     <div className="content__inner">
       <Header>
         <h2>Grzyby premium</h2>
