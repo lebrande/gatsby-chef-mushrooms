@@ -1,24 +1,37 @@
 .product-item {
   position: relative;
   padding: 2em 0;
+  background-color: desaturate(lighten($color-bg-alt, 2), 1);
+
+  &:nth-of-type(2n) {
+    background-color: desaturate(lighten($color-bg-alt, 4), 2);
+  }
 
   &__wrapper {
     @include container();
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+
+    @include breakpoint($breakpoint-new-small) {
+      flex-direction: row;
+    }
   }
 
-    &__img-link {
-      flex: 3;
-      @include clear-link();
-    }
+  &__img-link {
+    @include clear-link();
+    display: block;
+    margin-right: 2em;
+  }
 
-      &__img {
-        height: 200px;
-        width: auto;
-      }
+  &__content {
+    margin-top: 2em;
 
-    &__content {
-      flex: 7;
+    @include breakpoint($breakpoint-new-small) {
+      margin-top: 0;
     }
+  }
+
+  &__button {
+    @include button();
+  }
 }

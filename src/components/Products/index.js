@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import ProductItem from '../ProductItem';
 
 const Products = ({ products, images }) => (
@@ -15,6 +14,7 @@ const Products = ({ products, images }) => (
     }) => (
       <ProductItem 
         key={path}
+        path={path}
         title={title}
         image={images.find(({ 
           node: {
@@ -23,20 +23,7 @@ const Products = ({ products, images }) => (
         }) => 
           relativePath === image
         )}
-      >
-        <ul className="actions">
-          <li>
-            <Link to={path} className="products__button">
-              Czytaj więcej
-            </Link>
-          </li>
-          <li>
-            <button className="products__button">
-              zapytaj o ofertę
-            </button>
-          </li>
-        </ul>
-      </ProductItem>
+      />
     ))}
   </section>
 );

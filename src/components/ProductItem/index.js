@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 
 const ProductItem = ({
-  children,
+  path,
   title,
   image,
 }) => (
@@ -13,13 +13,27 @@ const ProductItem = ({
         to="/"
         className="product-item__img-link"
       >
-        {!!image ? <Img fixed={image.node.childImageSharp.fixed} /> : 'hello'}
+        <Img
+          {...image.node.childImageSharp}
+          style={{ display: 'block' }}
+        />
       </Link>
       <div className="product-item__content">
         <header className="product-header">
           <h1 className="product-title">{title}</h1>
         </header>
-        {children}
+        <ul className="actions">
+          <li>
+            <Link to={path} className="product-item__button">
+              Czytaj więcej
+            </Link>
+          </li>
+          <li>
+            <button className="product-item__button">
+              zapytaj o ofertę
+            </button>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
