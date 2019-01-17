@@ -1,0 +1,7 @@
+@mixin uppercase() {
+  font-size: 0.7em;
+  font-weight: $font-weight-bold;
+  letter-spacing: $font-letter-spacing-alt;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}

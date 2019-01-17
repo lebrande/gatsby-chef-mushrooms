@@ -19,6 +19,8 @@
 @import 'mixins/spotlights';
 @import 'mixins/svg-url';
 @import 'mixins/button';
+@import 'mixins/bottom-line';
+@import 'mixins/uppercase';
 
 @import 'base/reset';
 @import 'base/page';
@@ -30,7 +32,6 @@
 @import '../../components/Contact/contact';
 @import '../../components/Content/content';
 @import '../../components/Footer/footer';
-@import '../../components/Header/header';
 @import '../../components/Main/main';
 @import '../../components/ProductItem/product-item';
 @import '../../components/Products/products';

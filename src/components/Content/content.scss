@@ -2,6 +2,10 @@
   &__inner {
     @include inner();
   }
+
+  &__title {
+		@include bottom-line();
+	}
   
   &__text {
     max-width: 600px;

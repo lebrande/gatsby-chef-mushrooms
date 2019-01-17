@@ -1,13 +1,10 @@
 import React from 'react';
-import Header from '../Header';
 
 const Contact = () => (
   <section className="contact">
     <div className="inner">
       <section>
-        <Header>
-          <h2>Kontakt</h2>
-        </Header>
+        <h2 className="contact__title">Kontakt</h2>
         <p>
           Le Brande Jakub Pusiak
           <br />

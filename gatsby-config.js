@@ -19,7 +19,7 @@ module.exports = {
         image: 'other/risotto-z-boczniakami-krolewskimi.jpg',
       },  
       {
-        title: 'Lokalny producent',
+        title: 'Lokalny producent grzybów',
         content: 'Najlepsze produkty na wyciągnięcie ręki.',
         image: 'other/oferta-dla-gastronomii.jpg',
       },

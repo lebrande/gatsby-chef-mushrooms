@@ -18,6 +18,10 @@
 		}
 	}
 
+	&__title {
+		@include bottom-line();
+	}
+
 	.inner {
 		@include inner();
 		display: flex;

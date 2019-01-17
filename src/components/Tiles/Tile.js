@@ -2,10 +2,8 @@ import React from 'react';
 import Img from 'gatsby-image';
 
 import Stars from '../Stars';
-import Header from '../Header';
 
 const Tile = ({
-  reverse,
   title,
   features,
   content,
@@ -16,24 +14,24 @@ const Tile = ({
   },
 }) => {
   return (
-    <article
-      className="tile"
-      style={reverse ? { flexDirection: 'row-reverse' } : {}}
-    >
+    <article className="tile">
       <div className="tile__content">
-        <div className="tile__header">
-          <Header>
-            <h3
-              className="tile__title"
-            >
-              {features && features.includes('stars') ? <Stars /> : (title || '')}
-            </h3>
-            <p>{content || ''}</p>
-          </Header>
-        </div>
+        <header className="tile__header">
+          <h3 className="tile__title">
+            {features && features.includes('stars') ? <Stars /> : (title || '')}
+          </h3>
+          <p className="tile__description">{content || ''}</p>
+        </header>
       </div>
       <div className="tile__image">
-        <Img {...childImageSharp} />
+        <Img
+          {...childImageSharp}
+          alt={title}
+          title={title}
+          style={{
+            display: 'block',
+          }}
+        />
       </div>
     </article>
   );

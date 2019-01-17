@@ -4,3 +4,10 @@ $breakpoint-medium: '(max-width: 980px)';
 $breakpoint-small: '(max-width: 736px)';
 $breakpoint-xsmall: '(max-width: 480px)';
 $breakpoint-xxsmall: '(max-width: 360px)';
+
+$breakpoint-new-xxsmall: '(min-width: 360px)';
+$breakpoint-new-xsmall: '(min-width: 480px)';
+$breakpoint-new-small: '(min-width: 736px)';
+$breakpoint-new-medium: '(min-width: 980px)';
+$breakpoint-new-large: '(min-width: 1280px)';
+$breakpoint-new-xlarge: '(min-width: 1680px)';
