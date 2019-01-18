@@ -10,7 +10,7 @@ const ProductItem = ({
   <section className="product-item">
     <div className="product-item__wrapper">
       <Link 
-        to="/"
+        to={path}
         className="product-item__img-link"
       >
         <Img
@@ -19,21 +19,19 @@ const ProductItem = ({
         />
       </Link>
       <div className="product-item__content">
-        <header className="product-header">
-          <h1 className="product-title">{title}</h1>
-        </header>
-        <ul className="actions">
-          <li>
-            <Link to={path} className="product-item__button">
-              Czytaj więcej
-            </Link>
-          </li>
-          <li>
-            <button className="product-item__button">
-              zapytaj o ofertę
-            </button>
-          </li>
-        </ul>
+        <Link to={path}>
+          <h3 className="product-item__title">
+            {title}
+          </h3>
+        </Link>
+        <div>
+          <Link to={path} className="product-item__button">
+            Czytaj więcej
+          </Link>
+          <button className="product-item__button">
+            zapytaj o ofertę
+          </button>
+        </div>
       </div>
     </div>
   </section>

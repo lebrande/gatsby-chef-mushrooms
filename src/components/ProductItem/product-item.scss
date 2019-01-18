@@ -9,29 +9,44 @@
 
   &__wrapper {
     @include container();
-    display: flex;
-    flex-direction: column;
-
     @include breakpoint($breakpoint-new-small) {
-      flex-direction: row;
+      display: flex;
     }
   }
 
   &__img-link {
     @include clear-link();
     display: block;
-    margin-right: 2em;
+
+    @include breakpoint($breakpoint-new-small) {
+      max-width: 300px;
+      flex: 1;
+      margin-right: 2em;
+    }
   }
 
   &__content {
-    margin-top: 2em;
+    margin-top: 1.6em;
 
     @include breakpoint($breakpoint-new-small) {
       margin-top: 0;
+      flex: 1;
     }
+  }
+
+  &__title {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
   }
 
   &__button {
     @include button();
+    width: 100%;
+    margin: 1em 0;
+
+    @include breakpoint($breakpoint-new-small) {
+      width: auto;
+      margin: 1em 1em 1em 0;
+    }
   }
 }
