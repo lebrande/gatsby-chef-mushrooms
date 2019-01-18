@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { graphql } from 'gatsby';
 
 import Banner from '../components/Banner';
@@ -34,25 +34,23 @@ const Layout = ({
     }, 
   }
 }) => (
-  <div>
+  <Fragment>
     <Banner
       logoImageSharp={logoImageSharp}
       heroImageSharp={heroImageSharp}
     />
-    <div id="main">
-      <Tiles
-        tiles={homePageBoxes}
-        images={boxImageEdges}
-      />
-      <Content />
-      <Products
-        products={postEdges}
-        images={imageEdges}
-      />
-      <Contact />
-      <Footer />
-    </div>
-  </div>
+    <Tiles
+      tiles={homePageBoxes}
+      images={boxImageEdges}
+    />
+    <Content />
+    <Products
+      products={postEdges}
+      images={imageEdges}
+    />
+    <Contact />
+    <Footer />
+  </Fragment>
 );
 
 export default Layout;

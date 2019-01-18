@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
+
+import Footer from '../../components/Footer';
 
 const Template = ({
   data: {
@@ -14,20 +17,38 @@ const Template = ({
     },
   },
 }) => (
-  <div className="product">
-    <div className="product__images">
-      <div
-        className="product__image"
-        style={{
-          backgroundImage: `url("${childImageSharp.fluid.src}")`,
-        }}
-      />
+  <Fragment>
+    <div className="product">
+      <div className="product__images">
+        <div
+          className="product__image"
+          style={{
+            backgroundImage: `url("${childImageSharp.fluid.src}")`,
+          }}
+        />
+      </div>
+      <div className="product__content-image">
+        <Img {...childImageSharp} />
+      </div>
+      <div className="product__content">
+        <div className="contact__method">
+          <span className="icon alt fa-envelope" />
+          <h3>
+            <a href="mailto:jakub@lebrande.pl">jakub@lebrande.pl</a>
+          </h3>
+        </div>
+        <div className="contact__method">
+          <span className="icon alt fa-phone" />
+          <h3>+48 731 044 940</h3>
+        </div>
+        <h1>{title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </div>
+      <div className="product__contact">
+        <Footer />
+      </div>
     </div>
-    <div className="product__content">
-      <h1>{title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-    </div>
-  </div>
+  </Fragment>
 );
 
 export default Template;

@@ -1,10 +1,19 @@
 .product {
   &__images {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 40%;
-    height: 100%;
+    display: none;
+
+    @include breakpoint($breakpoint-new-medium) {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 40%;
+    }
+
+    @include breakpoint($breakpoint-new-large) {
+      width: 50%;
+    }
   }
 
   &__image {
@@ -12,8 +21,32 @@
     height: 100%;
   }
 
+  &__content-image {
+    @include breakpoint($breakpoint-new-medium) {
+      display: none;
+    }
+  }
+
   &__content {
-    margin-left: 40%;
-    padding: 4em;
+    padding: 2em;
+
+    @include breakpoint($breakpoint-new-medium) {
+      padding: 4em;
+      margin-left: 40%;
+    }
+
+    @include breakpoint($breakpoint-new-large) {
+      margin-left: 50%;
+    }
+  }
+
+  &__contact {
+    @include breakpoint($breakpoint-new-medium) {
+      margin-left: 40%;
+    }
+
+    @include breakpoint($breakpoint-new-large) {
+      margin-left: 50%;
+    }
   }
 }

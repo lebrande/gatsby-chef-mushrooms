@@ -28,9 +28,6 @@ const ProductItem = ({
           <Link to={path} className="product-item__button">
             Czytaj więcej
           </Link>
-          <button className="product-item__button">
-            zapytaj o ofertę
-          </button>
         </div>
       </div>
     </div>
