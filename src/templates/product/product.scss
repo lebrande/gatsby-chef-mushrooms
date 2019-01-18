@@ -1,6 +1,29 @@
 .product {
+  &__logo-wrapper {
+    background-color: rgba($color-bg, 0.8);
+
+    @include breakpoint($breakpoint-new-medium) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      width: 40%;
+    }
+
+    @include breakpoint($breakpoint-new-large) {
+      width: 50%;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
   &__images {
     display: none;
+    z-index: 5;
 
     @include breakpoint($breakpoint-new-medium) {
       display: block;
