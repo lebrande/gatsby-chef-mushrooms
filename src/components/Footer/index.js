@@ -1,30 +1,12 @@
 import React from 'react';
 
+import SocialMedia from '../SocialMedia';
+import Copyright from '../Copyright';
+
 const Footer = () => (
   <footer className="footer">
-    <div className="footer__inner">
-      <ul className="icons">
-        <li>
-          <a
-            href="https://www.facebook.com/chefmushrooms/"
-            className="icon alt fa-facebook"
-          >
-            <span className="label">Facebook</span>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/chefmushrooms/"
-            className="icon alt fa-instagram"
-          >
-            <span className="label">Instagram</span>
-          </a>
-        </li>
-      </ul>
-      <ul className="copyright">
-        <li>&copy; Chef Mushrooms</li>
-      </ul>
-    </div>
+    <SocialMedia />
+    <Copyright />      
   </footer>
 );
 
