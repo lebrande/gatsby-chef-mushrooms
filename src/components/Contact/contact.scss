@@ -1,6 +1,8 @@
 .contact {
 	border-bottom: solid 1px $color-border;
+	border-top: solid 1px $color-border;
 	overflow: hidden;
+	background-color: rgba($color-bg, 0.8);
 	
 	&__container {
 		@include container();

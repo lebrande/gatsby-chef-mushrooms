@@ -37,27 +37,19 @@ const Template = ({
       <meta name="description" content={metaDescription} />
     </Helmet>
     <div className="product">
-      <div className="product__logo-wrapper">
-        <div className="product__logo">
-          <Link to="/">
-            <Img {...logo} />
-          </Link>
-        </div>
+      <div className="product__logo">
+        <Link to="/">
+          <Img {...logo} />
+        </Link>
       </div>
       <div className="product__images">
-        <div
-          className="product__image"
-          style={{
-            backgroundImage: `url("${productImage.fluid.src}")`,
-          }}
-        />
-      </div>
-      <div className="product__content-image">
         <Img {...productImage} />
       </div>
-      <div className="product__content">
-        <h1>{title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+      <div className="product__content-wrapper">
+        <div className="product__content">
+          <h1>{title}</h1>
+          <div dangerouslySetInnerHTML={{ __html: html }} />
+        </div>
       </div>
       <div className="product__contact">
         <Contact />

@@ -1,75 +1,29 @@
 .product {
-  &__logo-wrapper {
-    background-color: rgba($color-bg, 0.8);
-
-    @include breakpoint($breakpoint-new-medium) {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: 10;
-      width: 40%;
-    }
-
-    @include breakpoint($breakpoint-new-large) {
-      width: 50%;
-    }
-  }
-
   &__logo {
-    width: 100%;
+    padding: 4em 0;
     max-width: 440px;
     margin: 0 auto;
   }
 
   &__images {
-    display: none;
+    max-width: 500px;
+    margin: 0 auto;
     z-index: 5;
-
-    @include breakpoint($breakpoint-new-medium) {
-      display: block;
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 40%;
-    }
-
-    @include breakpoint($breakpoint-new-large) {
-      width: 50%;
-    }
   }
 
-  &__image {
-    @include background-image();
-    height: 100%;
-  }
-
-  &__content-image {
-    @include breakpoint($breakpoint-new-medium) {
-      display: none;
-    }
+  &__content-wrapper {
+    @include row();
   }
 
   &__content {
-    padding: 2em;
-
-    @include breakpoint($breakpoint-new-medium) {
-      padding: 4em;
-      margin-left: 40%;
-    }
-
-    @include breakpoint($breakpoint-new-large) {
-      margin-left: 50%;
-    }
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12em;
   }
 
   &__contact {
-    @include breakpoint($breakpoint-new-medium) {
-      margin-left: 40%;
-    }
-
-    @include breakpoint($breakpoint-new-large) {
-      margin-left: 50%;
-    }
+    position: relative;
+    z-index: 100;
   }
 }
