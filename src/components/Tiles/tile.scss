@@ -54,16 +54,8 @@
   }
 
   &__title {
-    font-size: 1.2em;
     @include bottom-line();
-
-    @include breakpoint($breakpoint-new-xsmall) {
-      font-size: 1.2em;
-    }
-
-    @include breakpoint($breakpoint-new-large) {
-      font-size: 1.75em;
-    }
+    margin-top: 0;
   }
 
   &__description {
