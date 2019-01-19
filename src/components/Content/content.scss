@@ -1,7 +1,17 @@
 .content {
   &__container {
     @include container();
+    @include row();
     padding: 4em 0 2em 0;
+  }
+
+  &__wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+
+    @include breakpoint($breakpoint-container) {
+      max-width: none;
+    }
   }
 
   &__title {
