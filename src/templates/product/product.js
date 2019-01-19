@@ -24,9 +24,11 @@ const Template = ({
   <Fragment>
     <div className="product">
       <div className="product__logo-wrapper">
-        <Link to="/" className="product__logo">
-          <Img {...logo} />
-        </Link>
+        <div className="product__logo">
+          <Link to="/">
+            <Img {...logo} />
+          </Link>
+        </div>
       </div>
       <div className="product__images">
         <div
