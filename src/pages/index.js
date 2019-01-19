@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
 import Banner from '../components/Banner';
 import Contact from '../components/Contact';
@@ -14,6 +15,8 @@ const Layout = ({
   data: { 
     site: { 
       siteMetadata: {
+        title,
+        description,
         homePageBoxes,
       },
     },
@@ -35,6 +38,17 @@ const Layout = ({
   }
 }) => (
   <Fragment>
+    <Helmet defaultTitle={title} titleTemplate={`%s | ${title}`}>
+      <html lang="pl" />
+      <meta name="docsearch:version" content="2.0" />
+      <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"
+      />
+
+      <title>{title}</title>
+      <meta name="description" content={description} />
+    </Helmet>
     <Banner
       logoImageSharp={logoImageSharp}
       heroImageSharp={heroImageSharp}
@@ -101,18 +115,14 @@ export const query = graphql`
     }
     site {
       siteMetadata {
-        title
-        description
+        title,
+        description,
         homePageBoxes {
           title
           content
           link
           features
           image
-        }
-        homeTextBlock {
-          title
-          content
         }
       } 
     }

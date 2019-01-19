@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
+import { Helmet } from 'react-helmet';
 
 import Contact from '../../components/Contact';
 import Footer from '../../components/Footer';
@@ -10,6 +11,8 @@ const Template = ({
     markdownRemark: {
       frontmatter: {
         title,
+        metaTitle,
+        metaDescription,
       },
       html,
     },
@@ -22,6 +25,17 @@ const Template = ({
   },
 }) => (
   <Fragment>
+    <Helmet defaultTitle={title} titleTemplate={`%s | ${title}`}>
+      <html lang="pl" />
+      <meta name="docsearch:version" content="2.0" />
+      <meta
+        name="viewport"
+        content="width=device-width,initial-scale=1,shrink-to-fit=no,viewport-fit=cover"
+      />
+
+      <title>{metaTitle}</title>
+      <meta name="description" content={metaDescription} />
+    </Helmet>
     <div className="product">
       <div className="product__logo-wrapper">
         <div className="product__logo">
@@ -64,6 +78,8 @@ export const query = graphql`
       html
       frontmatter {
         title
+        metaTitle
+        metaDescription
       }
     }
     productImage: file(relativePath: { eq: $imagePath }) {

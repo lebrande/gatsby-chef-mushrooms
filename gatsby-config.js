@@ -1,11 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Chef Mushrooms',
-    description: 'Premium Products',
-    homeTextBlock: {
-      title: 'Dostawca grzybów',
-      content: 'Współpracujemy z profesjonalistami z branży gastronomicznej. Wszystkie produkty pochodzą z naszych lokalnych plantacji grzybów uprawnych.',
-    },
+    title: 'Chef Mushrooms - Premium Products',
+    description: 'Współpracujemy z profesjonalistami z branży gastronomicznej. Wszystkie produkty pochodzą z naszych lokalnych plantacji grzybów uprawnych.',
     homePageBoxes: [
       {
         title: 'Ocena na Facebooku',
@@ -64,6 +60,7 @@ module.exports = {
         path: `${__dirname}/src/assets/images`,
       },
     },
+    `gatsby-plugin-react-helmet`,
     'gatsby-transformer-remark', 
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
