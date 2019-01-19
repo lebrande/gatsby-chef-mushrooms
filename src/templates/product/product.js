@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
+import Contact from '../../components/Contact';
 import Footer from '../../components/Footer';
 
 const Template = ({
@@ -41,18 +42,9 @@ const Template = ({
       <div className="product__content">
         <h1>{title}</h1>
         <div dangerouslySetInnerHTML={{ __html: html }} />
-        <div className="contact__method">
-          <span className="icon alt fa-envelope" />
-          <h3>
-            <a href="mailto:jakub@lebrande.pl">jakub@lebrande.pl</a>
-          </h3>
-        </div>
-        <div className="contact__method">
-          <span className="icon alt fa-phone" />
-          <h3>+48 731 044 940</h3>
-        </div>
       </div>
       <div className="product__contact">
+        <Contact />
         <Footer />
       </div>
     </div>

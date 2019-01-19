@@ -1,106 +1,56 @@
 .contact {
 	border-bottom: solid 1px $color-border;
-	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
 
-	&__method {
-		margin: 0 0 $size-element-margin 0;
-		padding-left: 3.25em;
-		position: relative;
+	@include breakpoint($breakpoint-new-medium) {
+		flex-direction: row;
+	}
 
-		.icon {
-			left: 0;
-			position: absolute;
-			top: 0;
-		}
-
-		h3 {
-			margin: 0 0 ($size-element-margin * 0.25) 0;
-		}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 2em;
+		border-right: solid 1px $color-border;
+		flex: 6;
 	}
 
 	&__title {
 		@include bottom-line();
 	}
 
-	.inner {
-		@include inner();
-		display: flex;
-		padding: 0 !important;
+	&__text {
+		margin-bottom: 0;
+	}
 
-		> :nth-child(2n - 1) {
-			@include padding(4em, 0, (0, 3em, 0, 0));
-			border-right: solid 1px $color-border;
-			width: 60%;
-		}
+	&__data {
+		flex: 4;
+	}
 
-		> :nth-child(2n) {
-			padding-left: 3em;
-			width: 40%;
-		}
+	&__data-item {
+		padding: 3em;
+		border-top: solid 1px $color-border;
 
-		> .split {
-			padding: 0;
-
-			> * {
-				@include padding(3em, 0, (0, 0, 0, 3em));
-				position: relative;
-
-				&:before {
-					border-top: solid 1px $color-border;
-					content: '';
-					display: block;
-					margin-left: -3em;
-					position: absolute;
-					top: 0;
-					width: calc(100vw + 3em);
-				}
-			}
-
-			> :first-child {
-				&:before {
-					display: none;
-				}
+		@include breakpoint($breakpoint-new-medium) {
+			&:first-of-type {
+				border-top: none;
 			}
 		}
 	}
 
-	@include breakpoint($breakpoint-medium) {
-		> .inner {
-			display: block;
-
-			> :nth-child(2n - 1) {
-				@include padding(4em, 0, (0, 0, 0, 0));
-				border-right: 0;
-				width: 100%;
-			}
-
-			> :nth-child(2n) {
-				padding-left: 0;
-				width: 100%;
-			}
-
-			> .split {
-				> * {
-					@include padding(3em, 0, (0, 0, 0, 0));
-
-					&:before {
-					}
-				}
-
-				> :first-child {
-					&:before {
-						display: block;
-					}
-				}
-			}
-		}
+	&__method {
+		padding-left: 3.25em;
+		position: relative;
 	}
 
-	@include breakpoint($breakpoint-small) {
-		> .inner {
-			> :nth-child(2n - 1) {
-				@include padding(3em, 0, (0, 0, 0, 0));
-			}
-		}
+	&__method-icon {
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+
+	&__method-content {
+		margin: 0;
 	}
 }
