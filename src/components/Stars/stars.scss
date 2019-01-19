@@ -1,0 +1,5 @@
+.stars {
+  &__star {
+    @include icon();
+  }
+}

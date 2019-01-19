@@ -24,12 +24,6 @@
     pointer-events: none;
   }
 
-  .body.is-loading & {
-    &:after {
-      opacity: 1.0;
-    }
-  }
-
   @include breakpoint($breakpoint-small) {
     min-height: auto;
   }

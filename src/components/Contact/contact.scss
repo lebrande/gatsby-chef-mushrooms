@@ -45,6 +45,7 @@
 	}
 
 	&__method-icon {
+		@include icon();
 		left: 0;
 		position: absolute;
 		top: 0;

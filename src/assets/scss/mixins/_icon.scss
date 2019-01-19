@@ -1,17 +1,32 @@
-@mixin icon($content: false, $where: before) {
+@mixin icon() {
 	text-decoration: none;
 
-	&:#{$where} {
-
-		@if $content {
-			content: $content;
-		}
-
+	&:before {
 		-moz-osx-font-smoothing: grayscale;
 		-webkit-font-smoothing: antialiased;
 		font-family: FontAwesome;
 		font-style: normal;
 		font-weight: normal;
 		text-transform: none !important;
+	}
+
+	border-bottom: none;
+	position: relative;
+
+	> * {
+		display: none;
+	}
+
+	&--alt {
+		&:before {
+			background-color: $color-fg-bold;
+			border-radius: 100%;
+			color: $color-bg;
+			display: inline-block;
+			height: 2em;
+			line-height: 2em;
+			text-align: center;
+			width: 2em;
+		}
 	}
 }

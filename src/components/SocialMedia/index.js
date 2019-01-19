@@ -5,17 +5,17 @@ const SocialMedia = () => (
     <li className="social-media__item">
       <a
         href="https://www.facebook.com/chefmushrooms/"
-        className="icon alt fa-facebook"
+        className="social-media__icon social-media__icon--alt fa-facebook"
       >
-        <span className="label">Facebook</span>
+        <span>Facebook</span>
       </a>
     </li>
     <li className="social-media__item">
       <a
         href="https://www.instagram.com/chefmushrooms/"
-        className="icon alt fa-instagram"
+        className="social-media__icon social-media__icon--alt fa-instagram"
       >
-        <span className="label">Instagram</span>
+        <span>Instagram</span>
       </a>
     </li>
   </ul>

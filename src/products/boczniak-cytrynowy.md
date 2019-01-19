@@ -10,7 +10,7 @@ Golden oyster mushrooms
 Tamogitake
 Pleurotus citrinopileatus
 
-Swoim kolorem wzbudza duże zainteresowanie, jest znacznie drobniejszy od popularnego boczniaka ostrygowatego.
+*Swoim kolorem* wzbudza duże zainteresowanie, jest znacznie drobniejszy od popularnego boczniaka ostrygowatego.
 Ich struktura jest bardzo delikatna, również bardzo delikatne w konsystencji. Dzięki temu idealnie nadadzą się do zupy lub sałatki. Potrzebują jedynie delikatnej obróbki cieplnej.
 
 ## Smak i zastosowanie

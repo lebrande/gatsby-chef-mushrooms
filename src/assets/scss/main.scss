@@ -7,24 +7,19 @@
 @import '../css/font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
 
-@import 'functions/str-replace';
-
 @import 'mixins/background-image';
 @import 'mixins/breakpoint';
 @import 'mixins/clear-link';
 @import 'mixins/container';
 @import 'mixins/icon';
 @import 'mixins/inner';
-@import 'mixins/svg-url';
 @import 'mixins/button';
 @import 'mixins/bottom-line';
 @import 'mixins/uppercase';
 
-@import 'base/reset';
+@import 'base/normalize';
 @import 'base/page';
 @import 'base/typography';
-@import 'base/icon';
-@import 'base/list';
 
 @import '../../components/Banner/banner';
 @import '../../components/Contact/contact';
@@ -37,5 +32,6 @@
 @import '../../components/Tiles/tile';
 @import '../../components/SocialMedia/social-media';
 @import '../../components/Copyright/copyright';
+@import '../../components/Stars/stars';
 
 @import '../../templates/product/product';

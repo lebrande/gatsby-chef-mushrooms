@@ -13,7 +13,7 @@ const Contact = () => (
     <div className="contact__data">
       <div className="contact__data-item">
         <div className="contact__method">
-          <span className="contact__method-icon icon alt fa-envelope" />
+          <span className="contact__method-icon contact__method-icon--alt fa-envelope" />
           <h3 className="contact__method-content">
             <a href="mailto:jakub@lebrande.pl">jakub@lebrande.pl</a>
           </h3>
@@ -21,7 +21,7 @@ const Contact = () => (
       </div>
       <div className="contact__data-item">
         <div className="contact__method">
-          <span className="contact__method-icon icon alt fa-phone" />
+          <span className="contact__method-icon contact__method-icon--alt fa-phone" />
           <h3 className="contact__method-content">+48 731 044 940</h3>
         </div>
       </div>

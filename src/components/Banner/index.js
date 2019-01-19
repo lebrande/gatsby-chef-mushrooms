@@ -20,7 +20,7 @@ const Banner = ({
     </div>
     <div className="banner__cta">
       <button
-        className="banner__button next"
+        className="banner__button"
         onClick={() => {
           scrollTo('#content');
         }}
