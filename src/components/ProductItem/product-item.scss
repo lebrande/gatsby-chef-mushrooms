@@ -1,14 +1,14 @@
 .product-item {
   position: relative;
-  padding: 2em 0;
   background-color: desaturate(lighten($color-bg-alt, 2), 1);
 
   &:nth-of-type(2n) {
     background-color: desaturate(lighten($color-bg-alt, 4), 2);
   }
 
-  &__wrapper {
+  &__container {
     @include container();
+    padding: 4em 0 2em 0;
     @include breakpoint($breakpoint-new-small) {
       display: flex;
     }

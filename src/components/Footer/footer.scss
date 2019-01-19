@@ -1,3 +1,6 @@
 .footer {
-  @include inner();
+  @include container();
+  @include row();
+  margin-top: 2em;
+  margin-bottom: 2em;
 }

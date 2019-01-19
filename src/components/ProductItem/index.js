@@ -8,7 +8,7 @@ const ProductItem = ({
   image,
 }) => (
   <section className="product-item">
-    <div className="product-item__wrapper">
+    <div className="product-item__container">
       <Link 
         to={path}
         className="product-item__img-link"

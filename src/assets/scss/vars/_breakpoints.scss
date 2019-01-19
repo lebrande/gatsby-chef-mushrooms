@@ -11,3 +11,5 @@ $breakpoint-new-small: '(min-width: 736px)';
 $breakpoint-new-medium: '(min-width: 980px)';
 $breakpoint-new-large: '(min-width: 1280px)';
 $breakpoint-new-xlarge: '(min-width: 1680px)';
+
+$breakpoint-container: '(min-width: #{$size-container + 4em})'

@@ -1,0 +1,8 @@
+@mixin row() {
+  $breakpoint: $size-container + 4em;
+
+  @include breakpoint('(max-width: #{$breakpoint})') {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}

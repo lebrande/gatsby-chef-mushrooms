@@ -1,19 +1,28 @@
 .contact {
 	border-bottom: solid 1px $color-border;
-	display: flex;
-	flex-direction: column;
+	
+	&__container {
+		@include container();
+		@include row();
 
-	@include breakpoint($breakpoint-new-medium) {
-		flex-direction: row;
+		display: flex;
+		flex-direction: column;
+
+		@include breakpoint($breakpoint-container) {
+			flex-direction: row;
+		}
 	}
 
 	&__content {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding: 2em;
-		border-right: solid 1px $color-border;
+		padding: 2em 2em 2em 0;
 		flex: 6;
+
+		@include breakpoint($breakpoint-container) {
+			border-right: solid 1px $color-border;
+		}
 	}
 
 	&__title {
@@ -29,12 +38,32 @@
 	}
 
 	&__data-item {
-		padding: 3em;
-		border-top: solid 1px $color-border;
+		position: relative;
+		padding: 3em 0;
 
-		@include breakpoint($breakpoint-new-medium) {
+		&:before {
+			content: '';
+			display: block;
+			border-top: solid 1px $color-border;
+			position: absolute;
+			width: 10000px;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, 0);
+
+			@include breakpoint($breakpoint-container) {
+				left: 0;
+				transform: none;
+			}
+		}
+
+		@include breakpoint($breakpoint-container) {
+			padding: 3em;
+
 			&:first-of-type {
-				border-top: none;
+				&:before {
+					border-top: none;
+				}
 			}
 		}
 	}

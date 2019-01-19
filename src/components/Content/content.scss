@@ -1,6 +1,7 @@
 .content {
-  &__inner {
-    @include inner();
+  &__container {
+    @include container();
+    padding: 4em 0 2em 0;
   }
 
   &__title {

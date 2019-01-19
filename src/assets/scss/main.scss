@@ -1,8 +1,8 @@
+@import 'vars/sizes';
 @import 'vars/breakpoints';
 @import 'vars/colors';
 @import 'vars/durations';
 @import 'vars/font';
-@import 'vars/sizes';
 
 @import '../css/font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,600,600italic');
@@ -12,10 +12,10 @@
 @import 'mixins/clear-link';
 @import 'mixins/container';
 @import 'mixins/icon';
-@import 'mixins/inner';
 @import 'mixins/button';
 @import 'mixins/bottom-line';
 @import 'mixins/uppercase';
+@import 'mixins/row';
 
 @import 'base/normalize';
 @import 'base/page';
@@ -25,7 +25,6 @@
 @import '../../components/Contact/contact';
 @import '../../components/Content/content';
 @import '../../components/Footer/footer';
-@import '../../components/Main/main';
 @import '../../components/ProductItem/product-item';
 @import '../../components/Products/products';
 @import '../../components/Tiles/tiles';
