@@ -5,8 +5,10 @@ import Copyright from '../Copyright';
 
 const Footer = () => (
   <footer className="footer">
-    <SocialMedia />
-    <Copyright />      
+    <div className="footer__wrapper">
+      <SocialMedia />
+      <Copyright />      
+    </div>
   </footer>
 );
 

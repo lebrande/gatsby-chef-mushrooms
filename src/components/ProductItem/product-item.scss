@@ -8,8 +8,8 @@
 
   &__container {
     @include container();
-    padding: 4em 0 2em 0;
-    @include breakpoint($breakpoint-new-small) {
+    padding: 2em 0 2em 0;
+    @include breakpoint($breakpoint-container) {
       display: flex;
     }
   }
@@ -17,21 +17,34 @@
   &__img-link {
     @include clear-link();
     display: block;
+    flex: 1;
+    max-width: 500px;
+    margin: 0 auto;
 
-    @include breakpoint($breakpoint-new-small) {
-      max-width: 300px;
-      flex: 1;
+    @include breakpoint($breakpoint-container) {
       margin-right: 2em;
+      max-width: 300px;
+    }
+  }
+
+  &__content-wrapper {
+    @include row();
+    margin-top: 1.6em;
+    flex: 1;
+
+    @include breakpoint($breakpoint-container) {
+      margin-top: 0;
     }
   }
 
   &__content {
-    margin-top: 1.6em;
+    max-width: 500px;
+    margin: 0 auto;
 
-    @include breakpoint($breakpoint-new-small) {
-      margin-top: 0;
-      flex: 1;
-    }
+    @include breakpoint($breakpoint-container) {
+      max-width: none;
+      margin: 0 auto;
+    }    
   }
 
   &__title {
@@ -44,7 +57,7 @@
     width: 100%;
     margin: 1em 0;
 
-    @include breakpoint($breakpoint-new-small) {
+    @include breakpoint($breakpoint-container) {
       width: auto;
       margin: 1em 1em 1em 0;
     }

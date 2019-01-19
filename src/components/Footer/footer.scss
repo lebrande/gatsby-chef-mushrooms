@@ -3,4 +3,14 @@
   @include row();
   margin-top: 2em;
   margin-bottom: 2em;
+  
+  &__wrapper {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include breakpoint($breakpoint-container) {
+      max-width: none;
+    }
+  }
 }

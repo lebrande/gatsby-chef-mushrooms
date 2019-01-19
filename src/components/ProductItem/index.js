@@ -18,16 +18,18 @@ const ProductItem = ({
           style={{ display: 'block' }}
         />
       </Link>
-      <div className="product-item__content">
-        <Link to={path}>
-          <h3 className="product-item__title">
-            {title}
-          </h3>
-        </Link>
-        <div>
-          <Link to={path} className="product-item__button">
-            Czytaj więcej
+      <div className="product-item__content-wrapper">
+        <div className="product-item__content">
+          <Link to={path}>
+            <h3 className="product-item__title">
+              {title}
+            </h3>
           </Link>
+          <div>
+            <Link to={path} className="product-item__button">
+              Czytaj więcej
+            </Link>
+          </div>
         </div>
       </div>
     </div>

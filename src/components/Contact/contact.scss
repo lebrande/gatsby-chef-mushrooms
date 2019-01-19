@@ -1,5 +1,6 @@
 .contact {
 	border-bottom: solid 1px $color-border;
+	overflow: hidden;
 	
 	&__container {
 		@include container();
@@ -7,20 +8,28 @@
 
 		display: flex;
 		flex-direction: column;
+		align-items: center;
 
 		@include breakpoint($breakpoint-container) {
 			flex-direction: row;
+			align-items: stretch;
 		}
 	}
 
 	&__content {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding: 2em 2em 2em 0;
+		
 		flex: 6;
+		max-width: 500px;
+		width: 100%;
+		padding: 2em 0;
 
-		@include breakpoint($breakpoint-container) {
+		@include breakpoint($breakpoint-container) {			
+			max-width: none;
+			padding: 2em 2em 2em 0;
 			border-right: solid 1px $color-border;
 		}
 	}
@@ -35,11 +44,14 @@
 
 	&__data {
 		flex: 4;
+		width: 100%;
+		max-width: 500px;;
 	}
 
 	&__data-item {
 		position: relative;
 		padding: 3em 0;
+
 
 		&:before {
 			content: '';
