@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 
 import Contact from '../../components/Contact';
@@ -24,9 +24,9 @@ const Template = ({
   <Fragment>
     <div className="product">
       <div className="product__logo-wrapper">
-        <div className="product__logo">
+        <Link to="/" className="product__logo">
           <Img {...logo} />
-        </div>
+        </Link>
       </div>
       <div className="product__images">
         <div
