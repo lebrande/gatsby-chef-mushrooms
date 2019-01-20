@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: 'http://mojastrona.dev',
     title: 'Chef Mushrooms - Premium Products',
     description: 'Współpracujemy z profesjonalistami z branży gastronomicznej. Wszystkie produkty pochodzą z naszych lokalnych plantacji grzybów uprawnych.',
     homePageBoxes: [
@@ -61,6 +62,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
     'gatsby-transformer-remark', 
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',

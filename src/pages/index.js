@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
@@ -9,9 +9,9 @@ import Content from '../components/Content';
 import Footer from '../components/Footer';
 import Tiles from '../components/Tiles';
 
-import '../assets/scss/main.scss';
+import Layout from '../components/layout';
 
-const Layout = ({ 
+const Home = ({ 
   data: { 
     site: { 
       siteMetadata: {
@@ -37,7 +37,7 @@ const Layout = ({
     }, 
   }
 }) => (
-  <Fragment>
+  <Layout>
     <Helmet defaultTitle={title} titleTemplate={`%s | ${title}`}>
       <html lang="pl" />
       <meta name="docsearch:version" content="2.0" />
@@ -64,10 +64,10 @@ const Layout = ({
     />
     <Contact />
     <Footer />
-  </Fragment>
+  </Layout>
 );
 
-export default Layout;
+export default Home;
 
 export const query = graphql`
   query HomePageQuery {

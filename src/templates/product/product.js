@@ -1,10 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { graphql, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import { Helmet } from 'react-helmet';
 
 import Contact from '../../components/Contact';
 import Footer from '../../components/Footer';
+import Layout from '../../components/layout';
 
 const Template = ({
   data: {
@@ -24,7 +25,7 @@ const Template = ({
     }
   },
 }) => (
-  <Fragment>
+  <Layout>
     <Helmet defaultTitle={title} titleTemplate={`%s | ${title}`}>
       <html lang="pl" />
       <meta name="docsearch:version" content="2.0" />
@@ -56,7 +57,7 @@ const Template = ({
         <Footer />
       </div>
     </div>
-  </Fragment>
+  </Layout>
 );
 
 export default Template;

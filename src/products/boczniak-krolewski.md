@@ -6,9 +6,9 @@ metaDescription: "Potrzebujesz boczniaka królewskiego? Świeże boczniaki eryng
 image: "products/boczniak-krolewski.jpg"
 ---
 
-Boczniak mikołajkowy
-Eryngii
-Pleurotus eryngii
+- Boczniak mikołajkowy
+- Eryngii
+- Pleurotus eryngii
 
 Uprawiany w Azji i Europie grzyb o delikatnym i wykwintnym smaku. Często stosowany jako zamiennik świeżego prawdziwka. Rośnie pojedynczo w przeciwieństwie do pozostałych gatunków boczniaka.
 

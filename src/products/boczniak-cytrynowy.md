@@ -6,11 +6,11 @@ metaDescription: "Bardzo delikatne i smaczne boczniaki cytrynowe. Kolorowe i bar
 image: "products/boczniak-cytrynowy.jpg"
 ---
 
-Golden oyster mushrooms
-Tamogitake
-Pleurotus citrinopileatus
+- Golden oyster mushrooms
+- Tamogitake
+- Pleurotus citrinopileatus
 
-*Swoim kolorem* wzbudza duże zainteresowanie, jest znacznie drobniejszy od popularnego boczniaka ostrygowatego.
+Swoim kolorem wzbudza duże zainteresowanie, jest znacznie drobniejszy od popularnego boczniaka ostrygowatego.
 Ich struktura jest bardzo delikatna, również bardzo delikatne w konsystencji. Dzięki temu idealnie nadadzą się do zupy lub sałatki. Potrzebują jedynie delikatnej obróbki cieplnej.
 
 ## Smak i zastosowanie

@@ -6,9 +6,9 @@ metaDescription: "Dowiedz się więcej o dostawie. Zapoznaj się się z ofert�
 image: "products/boczniak-rozowy.jpg"
 ---
 
-Flamingo oyster mushroom
-Pink oyster mushroom
-Pleurotus djamor
+- Flamingo oyster mushroom
+- Pink oyster mushroom
+- Pleurotus djamor
 
 Bardzo ciekawa odmiana boczniaka. Delikatniejszy od tradycyjnego boczniaka ostrygowatego. Ma charakterystyczną różową barwę całego owocnika, co jest jego naturalną cechą. Świetny wybór do dań kuchni orientalnej, szczególnie kuchni tajskiej. Bardzo delikatny i miękki.
 

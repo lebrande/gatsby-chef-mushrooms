@@ -6,9 +6,9 @@ metaDescription: "Zamów świeże grzyby shiitake. Wejdź na stronę sklepu, zam
 image: "products/shiitake.jpg"
 ---
 
-Twardnik japoński, twardziak jadalny
-Lentinula edodes
-Shiitake mushroom
+- Twardnik japoński, twardziak jadalny
+- Lentinula edodes
+- Shiitake mushroom
 
 Najpowszechniej wykorzystywany w formie suszonej, ale u nas otrzymacie tylko świeże shiitake. Używany głównie w kuchni japońskiej oraz fusion. Dostępne są w naszej ofercie przez cały rok.
 

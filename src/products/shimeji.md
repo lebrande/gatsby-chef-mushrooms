@@ -6,9 +6,9 @@ metaDescription: "Szukasz składników do potraw orientalnych? Zobacz ofertę i 
 image: "products/shimeji.jpg"
 ---
 
-Hypsizygus tessellatus
-Buna shimeji, Bunapi shimeji
-White Beech Mushrooms, Brown Beech Mushrooms
+- Hypsizygus tessellatus
+- Buna shimeji, Bunapi shimeji
+- White Beech Mushrooms, Brown Beech Mushrooms
 
 Grzyby shimeji są drobne, posiadają główkę o wielkości paznokcia i stosunkowo długi jadalny trzon. Ich kapelusze nie powinny być otwarte, dlatego tak trudno uzyskać odpowiednią jakość tego grzyba. Rosną w wiązkach i tak są przechowywane, aby dłużej utrzymywały świeżość. Dostępne w naszej ofercie przez cały rok.
 

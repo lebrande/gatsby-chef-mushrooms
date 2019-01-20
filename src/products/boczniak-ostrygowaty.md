@@ -6,8 +6,8 @@ metaDescription: "Zamów świeże boczniaki ostrygowate. Wzbogać Twoje potrawy 
 image: "products/boczniak-ostrygowaty.jpg"
 ---
 
-Pleurotus ostreatus
-Grey oyster mushroom
+- Pleurotus ostreatus
+- Grey oyster mushroom
 
 Popularny boczniak to prawdopodobnie drugi najpopularniejszy gatunek grzybów w Polsce. Powszechnie znany i coraz chętniej wykorzystywany w kuchni, nie tylko tej orientalne. Jest jedną z kilku odmian boczniaka występujących w naszej ofercie. Dostępny przez cały rok.
 

@@ -6,7 +6,7 @@ metaDescription: "Szukasz składników do Twoich potraw? Gotujesz po japońsku? 
 image: "products/enoki.jpg"
 ---
 
-Flammulina velutipes
+- Flammulina velutipes
 
 Enoki jest charakterystycznym grzybem dla kuchni japońskiej w takich potrawach jak ramen czy shabu-shabu. Strukturą i kształtem przypominają nitki. Zawdzięczają to specjalnemu typowi uprawy.
 
