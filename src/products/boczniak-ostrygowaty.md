@@ -1,6 +1,6 @@
 ---
 title: Boczniak Ostrygowaty
-path: "/boczniak-ostrygowaty/"
+path: "/produkt/boczniak-ostrygowaty/"
 metaTitle: "Boczniak ostrygowaty - Świeże grzyby - Zamów | Chef Mushrooms"
 metaDescription: "Zamów świeże boczniaki ostrygowate. Wzbogać Twoje potrawy o niepowtarzalny smak boczniaków. Zawsze świeże i dostarczone na czas grzyby dla Twojej kuchni."
 image: "products/boczniak-ostrygowaty.jpg"

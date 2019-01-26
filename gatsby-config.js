@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'http://mojastrona.dev',
+    siteUrl: 'https://dobregrzybki.pl',
     title: 'Chef Mushrooms - Premium Products',
     description: 'Współpracujemy z profesjonalistami z branży gastronomicznej. Wszystkie produkty pochodzą z naszych lokalnych plantacji grzybów uprawnych.',
     homePageBoxes: [

@@ -1,6 +1,6 @@
 ---
 title: Shimeji
-path: "/shimeji/"
+path: "/produkt/shimeji/"
 metaTitle: "Shimeji - Grzyby orientalne - Zamów | Chef Mushrooms"
 metaDescription: "Szukasz składników do potraw orientalnych? Zobacz ofertę i zamów."
 image: "products/shimeji.jpg"

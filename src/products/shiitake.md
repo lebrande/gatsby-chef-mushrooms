@@ -1,6 +1,6 @@
 ---
 title: Shiitake
-path: "/shiitake/"
+path: "/produkt/shiitake/"
 metaTitle: "Shiitake - Świeże grzyby orientalne - Zamów | Chef Mushrooms"
 metaDescription: "Zamów świeże grzyby shiitake. Wejdź na stronę sklepu, zamów i zapłać online. Zobacz także więcej ciekawych grzybów kuchni orientalnej."
 image: "products/shiitake.jpg"

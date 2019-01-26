@@ -1,6 +1,6 @@
 ---
 title: Pioppino
-path: "/pioppino/"
+path: "/produkt/pioppino/"
 metaTitle: "Pioppino grzyby idealne do kuchni włoskiej | Zamów"
 metaDescription: "Szukasz inspiracji dla Twoich potraw? Lubisz kuchnię włoską, rissotto i dania z past? Poznaj wspaniały smak grzybów pioppino. Zamów na naszej stronie."
 image: "products/pioppino.jpg"

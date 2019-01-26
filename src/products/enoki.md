@@ -1,6 +1,6 @@
 ---
 title: Enoki
-path: "/enoki/"
+path: "/produkt/enoki/"
 metaTitle: "Enoki grzyby egzotyczne i orientalne | Chef Mushrooms"
 metaDescription: "Szukasz składników do Twoich potraw? Gotujesz po japońsku? Wzbogać smak i charakter swoich potraw o niezwykłe grzyby enoki. Zamów na stronie lub Facebooku."
 image: "products/enoki.jpg"

@@ -1,6 +1,6 @@
 ---
 title: Boczniak Rózowy
-path: "/boczniak-rozowy/"
+path: "/produkt/boczniak-rozowy/"
 metaTitle: "Boczniak różowy - Świeże grzyby egzotyczne - Zamów online"
 metaDescription: "Dowiedz się więcej o dostawie. Zapoznaj się się z ofertą Chef Mushrooms i zamów boczniaka różowego."
 image: "products/boczniak-rozowy.jpg"
