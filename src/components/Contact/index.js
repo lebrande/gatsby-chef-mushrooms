@@ -2,6 +2,13 @@ import React from 'react';
 
 const Contact = () => (
   <section className="contact">
+    <div className="contact__form">
+      <div
+        className="ml-form-embed"
+        data-account="825951:r1x7b8j5s2"
+        data-form="1286952:l3l4e6"
+      />
+    </div>
     <div className="contact__container">
       <div className="contact__content">
         <h2 className="contact__title">Kontakt</h2>

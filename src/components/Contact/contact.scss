@@ -3,6 +3,11 @@
 	border-top: solid 1px $color-border;
 	overflow: hidden;
 	background-color: rgba($color-bg, 0.8);
+
+	&__form {
+		margin: 2em auto;
+		padding: 0 1em;
+	}
 	
 	&__container {
 		@include container();
@@ -33,6 +38,17 @@
 			max-width: none;
 			padding: 2em 2em 2em 0;
 			border-right: solid 1px $color-border;
+		}
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 3000px;
+			height: 1px;
+			background-color: $color-border;
+			transform: translateX(-50%);
 		}
 	}
 
