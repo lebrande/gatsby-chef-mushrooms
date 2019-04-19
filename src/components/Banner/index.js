@@ -27,6 +27,14 @@ const Banner = ({
       >
         Zobacz produkty
       </button>
+      <button
+        className="banner__button"
+        onClick={() => {
+          scrollTo('#contact-form');
+        }}
+      >
+        Pobierz ofertę
+      </button>
     </div>
   </div>
 );

@@ -4,6 +4,7 @@ const Contact = () => (
   <section className="contact">
     <div className="contact__form">
       <div
+        id="contact-form"
         className="ml-form-embed"
         data-account="825951:r1x7b8j5s2"
         data-form="1286952:l3l4e6"

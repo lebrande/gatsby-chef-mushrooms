@@ -40,9 +40,11 @@
   &__cta {
     position: relative;
     z-index: 2;
+    text-align: center;
   }
 
   &__button {
     @include button();
+    margin: 1em;
   }
 }
